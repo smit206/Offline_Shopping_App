@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "517496585930",
+    "firebase_url": "https://entheos-aa7c2-default-rtdb.firebaseio.com",
+    "project_id": "entheos-aa7c2",
+    "storage_bucket": "entheos-aa7c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517496585930:android:51b8cc6d4b6a0b0698be33",
+        "android_client_info": {
+          "package_name": "com.example.entheos"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHC2wZLTCyDCUYUoa0bHu4l5JuUfEF5BQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
