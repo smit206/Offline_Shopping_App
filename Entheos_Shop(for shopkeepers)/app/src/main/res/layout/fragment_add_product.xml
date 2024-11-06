@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProductFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".AddProductFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+            <EditText
+                android:id="@+id/addpname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product Name"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkpurple"
+                android:fontFamily="@font/adamina"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp" />
+
+            <EditText
+                android:id="@+id/addpprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Price"
+                android:inputType="numberDecimal"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkpurple"
+                android:fontFamily="@font/adamina"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+            <EditText
+                android:id="@+id/addpdesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:textSize="12sp"
+                android:textColor="@color/darkpurple"
+                android:fontFamily="@font/adamina"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+            <Button
+                android:id="@+id/addpphotos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Photos"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="@font/adamina"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/addrvphotos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="4dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+            <Button
+                android:id="@+id/addpupload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Product"
+                android:layout_marginTop="16dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="@font/adamina"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/addtvyourproduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Products"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/darkpurple"
+                android:fontFamily="@font/adamina"
+                android:visibility="gone"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/addrvyourproduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+    </LinearLayout>
+</ScrollView>

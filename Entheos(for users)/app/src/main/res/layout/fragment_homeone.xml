@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".homeone">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvadds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:id="@+id/rlr1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/rvadds"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/pricelist"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:background="@drawable/price_back"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home_price_list"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Price List"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#4a1958"
+                android:fontFamily="@font/adamina"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vendors"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:background="@drawable/vendor_back"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home_vendors"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Vendors"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#741c58"
+                android:fontFamily="@font/adamina"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rlr2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/rlr1"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/promos"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:background="@drawable/promos_back"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home_promos"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Discounts"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#d85926"
+                android:fontFamily="@font/adamina"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
